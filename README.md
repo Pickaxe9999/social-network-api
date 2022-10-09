@@ -30,7 +30,7 @@ Jacob Hannah
 
 ## Questions?
 GitHub: [Pickaxe9999](https://github.com/Pickaxe9999)
-Walkthrough Video:
+Walkthrough Video: https://drive.google.com/file/d/1CICSXYjMNSG0ou3AeFTJ_UdNW1CfDYnM/view
 Repository: https://github.com/Pickaxe9999/social-network-api
 
 For any aditional question you can reach me at [jacob.hannah164@gmail.com](jacob.hannah164@gmail.com)
