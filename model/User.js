@@ -14,7 +14,21 @@ const UserSchema = new Schema({
         trim: true,
         match: /.+\@.+\..+/, //https://masteringjs.io/tutorials/mongoose/mongoose-validate-unique-email still barely understand Regex
         unique: true
-    }
+    },
+
+    thoughts: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: 'Thought'
+        }
+    ],
+
+    friends: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: 'User'
+        }
+    ]
 },
     {
         toJSON: {
@@ -24,6 +38,10 @@ const UserSchema = new Schema({
         id: false
     }
 )
+
+UserSchema.virtual('friendCount').get(function() {
+    return this.friends.length;
+})
 
 const User = model('User', UserSchema);
 
